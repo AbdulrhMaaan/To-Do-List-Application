@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:elevation="10dp"
+    tools:context=".UI.fragments.AddListFragment">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_new_list"
+            android:layout_width="131dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Add list"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/cancel_new_list"
+            app:layout_constraintTop_toBottomOf="@+id/new_list_name"
+            tools:ignore="MissingConstraints"
+            tools:layout_conversion_absoluteHeight="38dp"
+            tools:layout_conversion_absoluteWidth="94dp" />
+
+        <Button
+            android:id="@+id/cancel_new_list"
+            android:layout_width="131dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="44dp"
+            android:background="#ffff"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_list_name"
+            tools:ignore="MissingConstraints"
+            tools:layout_conversion_absoluteHeight="27dp"
+            tools:layout_conversion_absoluteWidth="62dp" />
+
+        <TextView
+            android:id="@+id/Create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="143dp"
+            android:text="Create New List"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="169dp" />
+
+        <EditText
+            android:id="@+id/new_list_name"
+            android:layout_width="238dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="47dp"
+            android:ems="10"
+            android:hint='List Name: "Shopping"'
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Create"
+            tools:layout_conversion_absoluteHeight="56dp"
+            tools:layout_conversion_absoluteWidth="237dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
